@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body > 
+    <div class="container-fluid " id="main" >
+        <H1> LETS TAKE A SIMPLE QUIZ ABOUT <br><span style="color: orangered;"> TATA IPL 2024.</span></H1>
+        <form class="form" id="form" >
+        <div class="input">
+            <label for="name" >NAME   :</label>
+            <input type="text" id="name"  title="Enter Your Name" required>
+        </div>
+        <br><br>
+        <div class="radio">
+            <label for="p" for="pq">DO YOU WATCH IPL 2024 :</label>
+            <input type="radio" id="p" name="P" required><span>YES</span></input>
+            <input type="radio" id="pq" name="P" required><span>NO</span></input>
+         </div>
+        <br><br>
+       <div class="input">
+            <label for="r">YOUR FAVORITE TEAM    :</label>
+            <input type="text" id="r" title="Your Favorite Team" required ><br><br>
+        </div>
+        <button type="submit" class="submit" onclick="clickfun()" >Submit Bro</button>
+        </form>
+    </div>
+    <div class="overlay" id="overlay"></div>    
+    <div class="quizpage" id="quizpage">
+            <div class="quiz">
+                <h1>1.who will be going to take the orange cap of IPL2024 </h1>
+                <div class="options" >
+                <input type="radio" name="n1" onclick="ans()"> VIRAT KOHLI &#128081
+                <input type="radio"name="n1">SHUBMAN GILL 
+                <input type="radio" name="n1">RIYAN PARAG
+                <input type="radio" name="n1">HEINRICH KLASEEN
+                </div>
+            </div>
+            <div class="quiz">
+                
+                <h1>2.who will take the purple cap this season</h1>
+                <div class="options">
+                <input type="radio" name="n2"  >MAYANK YADAV
+                <input type="radio"name="n2"onclick="ans()">YUZI CHAHAL <br>
+                <input type="radio" name="n2">MUSTAFIZUR RAHMAN
+                <input type="radio" name="n2">JASPRIT BUMRAH <br>
+            </div>
+            </div>
+            <div class="quiz">
+                <h1>3.who will win the title of tata ipl 2024 </h1>
+                <div class="options">
+                <input type="radio" name="n3">KOLKATA KNIGHT RIDERS
+                <input type="radio"name="n3">RAJASTHAN ROYALS<br>
+                <input type="radio" name="n3">LUCKNOW SUPER GAINTS
+                <input type="radio" name="n3"  onclick="ans()">CHENNAI SUPER KINGS<br>
+                </div>
+            </div>
+            <div class="quiz">
+                <h1>4.which two teams will play the tata ipl final 2024</h1>
+                <div class="options">
+                <input type="radio" name="n4"  onclick="ans()">CSK vs KKR 
+                <input type="radio"name="n4">RR vs LSG 
+                <input type="radio" name="n4">LSG vs CSK
+                <input type="radio" name="n4">KKR vs RR 
+                </div>
+            </div>
+            <div class="quiz">
+                <h1>5.which pacer will break the record of fastest ball in ipl history(157.7 kmph) </h1>
+                <div class="options">
+                <input type="radio" name="n5"  onclick="ans()">MAYANK YADAV 
+                <input type="radio"name="n5">ANRICH NORTJE 
+                <input type="radio" name="n5">ALZARRI JOSEPH
+                <input type="radio" name="n5">GERALD COETZEE 
+                </div>
+                
+            </div>
+            <button class="new" onclick="result()">SUBMIT</button>
+       
+    </div>   
+   
+   
+
+
+
+
+
+
+
+<script src="quiz.js"></script>
+    
+        
+</body>
+</html>
